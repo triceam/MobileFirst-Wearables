@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" alignment="left" text="loading..." id="Ejm-My-REh"/>
+                        <table alignment="left" id="Fhh-wa-YKH">
+                            <items>
+                                <tableRow identifier="stockTableRow" id="u7a-hC-2Wh" customClass="StockTableRow">
+                                    <group key="rootItem" width="1" height="46" alignment="left" spacing="0.0" id="mAB-3A-zIj">
+                                        <items>
+                                            <group width="80" alignment="left" layout="vertical" spacing="3" id="3sz-tc-8uk">
+                                                <items>
+                                                    <label width="1" alignment="left" text="Label" id="lHJ-nz-bfZ">
+                                                        <color key="textColor" red="0.82153566919999998" green="0.82153566919999998" blue="0.82153566919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                    <label alignment="left" text="Label" id="V34-f6-U0V">
+                                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <label width="41" alignment="right" text="Label" textAlignment="right" id="f4W-DH-fgr">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="4" right="4" top="3" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="changeLabel" destination="f4W-DH-fgr" id="M9H-wp-rn7"/>
+                                        <outlet property="containerGroup" destination="mAB-3A-zIj" id="07S-xZ-5vy"/>
+                                        <outlet property="priceLabel" destination="V34-f6-U0V" id="t3j-xV-MV2"/>
+                                        <outlet property="stockLabel" destination="lHJ-nz-bfZ" id="oZU-s2-a0i"/>
+                                        <segue destination="1pG-p0-zD4" kind="push" id="YBF-7c-TCV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="dataTable" destination="Fhh-wa-YKH" id="UNw-nY-SVn"/>
+                        <outlet property="feedbackLabel" destination="Ejm-My-REh" id="B8o-9v-CI2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="194" y="188"/>
+        </scene>
+        <!--Stock Detail Controller-->
+        <scene sceneID="Sox-D1-yyY">
+            <objects>
+                <controller id="1pG-p0-zD4" customClass="StockDetailController">
+                    <items>
+                        <label width="1" alignment="left" text="loading..." textAlignment="center" numberOfLines="3" id="sNr-yV-bWF">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <label width="1" alignment="left" text="0.00" textAlignment="center" id="G8S-wT-znh">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <label width="1" alignment="left" text="." textAlignment="center" id="Cfs-6Q-Xxj">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <group width="1" alignment="left" id="kdp-sg-MgL">
+                            <items>
+                                <group width="0.48999999999999999" alignment="left" layout="vertical" id="Rru-ry-aAF">
+                                    <items>
+                                        <label width="1" alignment="left" text="LOW" textAlignment="center" id="Kbh-yv-ZAa">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="0.00" textAlignment="center" id="JVJ-24-l8C"/>
+                                    </items>
+                                </group>
+                                <separator height="1" alignment="left" alpha="0.39999999999999963" id="QaF-4s-EZE">
+                                    <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </separator>
+                                <group width="0.48999999999999999" alignment="left" layout="vertical" id="aMw-wA-4xx">
+                                    <items>
+                                        <label width="1" alignment="left" text="HIGH" textAlignment="center" id="YRS-4l-mMe">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="0.00" textAlignment="center" id="E5d-DE-sgn"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="Ncg-Fo-shl">
+                            <items>
+                                <label width="0.50000000000000011" alignment="left" text="OPEN" textAlignment="left" id="1Mf-zN-NVg">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="0.50000000000000011" alignment="right" text="0.00" textAlignment="right" id="fiN-TG-Ofm">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="4" bottom="0.0"/>
+                        </group>
+                        <separator alignment="left" alpha="0.40000000000000002" id="oMa-h6-2k2">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" alignment="left" id="qzO-C8-8Yl">
+                            <items>
+                                <label width="0.50000000000000011" alignment="left" text="EPS" textAlignment="left" id="QqP-EO-q7E">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="0.50000000000000011" alignment="right" text="0.00" textAlignment="right" id="L1z-lm-bf3">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="4" bottom="0.0"/>
+                        </group>
+                        <separator alignment="left" alpha="0.40000000000000002" id="Jjn-PX-jRb">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" alignment="left" id="VTb-UA-0i2">
+                            <items>
+                                <label width="0.50000000000000011" alignment="left" text="VOL" textAlignment="left" id="29g-bS-BkC">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="0.50000000000000011" alignment="right" text="0.00" textAlignment="right" id="6ML-XJ-SUs">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="4" bottom="0.0"/>
+                        </group>
+                        <separator alignment="left" alpha="0.40000000000000002" id="cMb-AG-yB2">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" alignment="left" id="JNw-7l-LMK">
+                            <items>
+                                <label width="0.50000000000000011" alignment="left" text="52W H" textAlignment="left" id="je2-HS-gYA">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="0.50000000000000011" alignment="right" text="0.00" textAlignment="right" id="RiK-Rp-U0C">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="4" bottom="0.0"/>
+                        </group>
+                        <separator alignment="left" alpha="0.40000000000000002" id="dyj-lg-cSD">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" alignment="left" id="kOq-6e-CnO">
+                            <items>
+                                <label width="0.50000000000000011" alignment="left" text="52W L" textAlignment="left" id="fXO-eL-BcN">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="0.50000000000000011" alignment="right" text="0.00" textAlignment="right" id="B6t-7j-yIX">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="4" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="changeLabel" destination="Cfs-6Q-Xxj" id="YJB-MJ-BjJ"/>
+                        <outlet property="epsLabel" destination="L1z-lm-bf3" id="SYy-JP-nX2"/>
+                        <outlet property="high52Label" destination="RiK-Rp-U0C" id="wRQ-mv-3Nl"/>
+                        <outlet property="highLabel" destination="E5d-DE-sgn" id="WUK-52-Ica"/>
+                        <outlet property="low52Label" destination="B6t-7j-yIX" id="n7x-4U-Il1"/>
+                        <outlet property="lowLabel" destination="JVJ-24-l8C" id="F0r-VB-aJ9"/>
+                        <outlet property="nameLabel" destination="sNr-yV-bWF" id="5CA-0E-I4b"/>
+                        <outlet property="openLabel" destination="fiN-TG-Ofm" id="uIh-Lg-H0k"/>
+                        <outlet property="priceLabel" destination="G8S-wT-znh" id="kAm-FS-wJb"/>
+                        <outlet property="volLabel" destination="6ML-XJ-SUs" id="IfY-jv-Otr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="509" y="208"/>
+        </scene>
+    </scenes>
+</document>
