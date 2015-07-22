@@ -85,33 +85,36 @@
 
 -(void) buildUI {
     
-    [self.feedbackLabel setHidden:YES];
-    [self.dataTable setNumberOfRows:[self.stocks count] withRowType:@"stockTableRow"];
-    
-    for (NSInteger i = 0; i < self.dataTable.numberOfRows; i++) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+           
+        [self.feedbackLabel setHidden:YES];
+        [self.dataTable setNumberOfRows:[self.stocks count] withRowType:@"stockTableRow"];
         
-        StockTableRow* row = [self.dataTable rowControllerAtIndex:i];
-        NSDictionary* item = [self.stocks objectAtIndex:i];
-        
-        [row.stockLabel setText:[item valueForKey:@"symbol"]];
-        
-        NSNumber *price = [item valueForKey:@"price"];
-        NSNumber *change = [item valueForKey:@"change"];
-        [row.priceLabel setText:[NSString stringWithFormat:@"%-.2f", [price floatValue]]];
-        [row.changeLabel setText:[NSString stringWithFormat:@"%-.2f", [change floatValue]]];
-        
-        if ([change floatValue] > 0.0) {
-            [row.changeLabel setTextColor: [UIColor greenColor]];
-            [row.containerGroup setBackgroundColor:[UIColor colorWithRed:0 green:0.2 blue:0 alpha:1]];
-        } else if ([change floatValue] < 0.0) {
-            [row.changeLabel setTextColor: [UIColor redColor]];
-            [row.containerGroup setBackgroundColor:[UIColor colorWithRed:0.2 green:0 blue:0 alpha:1]];
+        for (NSInteger i = 0; i < self.dataTable.numberOfRows; i++) {
+            
+            StockTableRow* row = [self.dataTable rowControllerAtIndex:i];
+            NSDictionary* item = [self.stocks objectAtIndex:i];
+            
+            [row.stockLabel setText:[item valueForKey:@"symbol"]];
+            
+            NSNumber *price = [item valueForKey:@"price"];
+            NSNumber *change = [item valueForKey:@"change"];
+            [row.priceLabel setText:[NSString stringWithFormat:@"%-.2f", [price floatValue]]];
+            [row.changeLabel setText:[NSString stringWithFormat:@"%-.2f", [change floatValue]]];
+            
+            if ([change floatValue] > 0.0) {
+                [row.changeLabel setTextColor: [UIColor greenColor]];
+                [row.containerGroup setBackgroundColor:[UIColor colorWithRed:0 green:0.2 blue:0 alpha:1]];
+            } else if ([change floatValue] < 0.0) {
+                [row.changeLabel setTextColor: [UIColor redColor]];
+                [row.containerGroup setBackgroundColor:[UIColor colorWithRed:0.2 green:0 blue:0 alpha:1]];
+            }
+            else {
+                [row.changeLabel setTextColor: [UIColor whiteColor]];
+                [row.containerGroup setBackgroundColor:[UIColor colorWithRed:0.15 green:0.15 blue:0.15 alpha:1]];
+            }
         }
-        else {
-            [row.changeLabel setTextColor: [UIColor whiteColor]];
-            [row.containerGroup setBackgroundColor:[UIColor colorWithRed:0.15 green:0.15 blue:0.15 alpha:1]];
-        }
-    }
+    });
 }
 
 - (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier

@@ -39,44 +39,42 @@
 
 -(void) getList:(void (^)(NSArray*))callback{
     
-    WLProcedureInvocationData *invocationData =
-        [[WLProcedureInvocationData alloc]
-            initWithAdapterName:@"StockAdapter"
-                  procedureName:@"getList"];
-        
-    [WLClientHelper invokeProcedure:invocationData successCallback:^(WLResponse *successResponse) {
-        
-        NSArray *responseData = [[successResponse responseJSON] objectForKey:@"stocks"];
-        //handle the response
-        callback(responseData);
-        
-
-    } errorCallback:^(WLFailResponse *errorResponse) {
-        
-        //you should do better error handling than this
-        callback(nil);
+    NSURL* url = [NSURL URLWithString:@"/adapters/StockAdapter/getList"];
+    WLResourceRequest* request = [WLResourceRequest requestWithURL:url method:WLHttpMethodGet];
+    
+    [request sendWithCompletionHandler:^(WLResponse *response, NSError *error) {
+        if(error != nil){
+            //you should do better error handling than this
+            callback(nil);
+        }
+        else{
+            NSDictionary *responseJSON = response.responseJSON;
+            callback( [responseJSON objectForKey:@"stocks"] );
+        }
     }];
 }
 
 
 -(void) getDetailForStock:(NSDictionary*)stock with:(void (^)(NSDictionary*))callback{
     
-    WLProcedureInvocationData *invocationData = [[WLProcedureInvocationData alloc] initWithAdapterName:@"StockAdapter" procedureName:@"getDetail"];
     
-    invocationData.parameters = @[[stock objectForKey:@"symbol"]];
+    NSURL* url = [NSURL URLWithString:@"/adapters/StockAdapter/getDetail"];
+    WLResourceRequest* request = [WLResourceRequest requestWithURL:url method:WLHttpMethodGet];
     
-    [WLClientHelper invokeProcedure:invocationData successCallback:^(WLResponse *successResponse) {
-        
-        NSDictionary *responseData = [successResponse responseJSON];
-        callback(responseData);
-        
-    } errorCallback:^(WLFailResponse *errorResponse) {
-        
-        //you should do better error handling than this
-        callback(nil);
-    }];
+    NSString *paramsString = [NSString stringWithFormat:@"['%@']", [stock objectForKey:@"symbol"]];
     
-}
+    [request setQueryParameterValue:paramsString forName:@"params"];
+    
+    [request sendWithCompletionHandler:^(WLResponse *response, NSError *error) {
+        if(error != nil){
+            //you should do better error handling than this
+            callback(nil);
+        }
+        else{
+            NSDictionary *responseJSON = response.responseJSON;
+            callback( responseJSON );
+        }
+    }];}
 
 
 
