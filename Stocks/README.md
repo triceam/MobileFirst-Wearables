@@ -1,4 +1,5 @@
-Sample app that is a re-creation of the Apple Watch Stocks app, powered by IBM MobileFirst.  
+#Stocks
+Sample app that is a re-creation of the Apple Watch Stocks app, powered by IBM MobileFirst Platform Foundation Server.  
 
 You can read a detailed walkthrough of this app and associated code at:
 http://www.tricedesigns.com/2015/06/03/serving-data-to-the-apple-watch-with-ibm-mobilefirst/

@@ -1,0 +1,28 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "cloudant": {
+    "host": "your cloudant host url goes here",
+    "port": 443,
+    "name": "cloudant",
+    "connector": "couch",
+    "db": "contacts",
+    "protocol": "https",
+    "auth": {
+      "admin": {
+        "username": "admin username",
+        "password": "admin password"
+      },
+      "reader": {
+        "username": "data reader username",
+        "password": "data reader password"
+      },
+      "writer": {
+        "username": "data writer username",
+        "password": "data writer password"
+      }
+    }
+  }
+}

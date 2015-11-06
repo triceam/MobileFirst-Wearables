@@ -1,0 +1,21 @@
+{
+  "name": "MobileBackendStarterApp",
+  "version": "0.0.1",
+  "description": "A template Mobile Backend application",
+  "dependencies": {
+    "cloudant": "^1.0.0-beta3",
+    "express": "4.*",
+    "imf-oauth-user-sdk": "*",
+    "jade": "^1.9.2",
+    "nano": "^6.1.2",
+    "passport": "*",
+    "passport-imf-token-validation": "*"
+  },
+  "engines": {
+    "node": "0.10.26"
+  },
+  "repository": {},
+  "scripts": {
+    "start": "node app.js"
+  }
+}

@@ -1,0 +1,30 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'WearablesExplorer' do
+
+source 'https://github.com/CocoaPods/Specs.git'
+# Copy the dependencies that you want to use in your project
+pod 'IMFCore'
+pod 'IMFURLProtocol'
+pod 'IMFPush'
+pod 'IMFData'
+
+end
+
+target 'WearablesExplorerTests' do
+
+end
+
+target 'WearablesExplorer WatchKit Extension' do
+
+pod 'IMFCore'
+pod 'IMFURLProtocol'
+pod 'IMFData'
+
+end
+
+target 'WearablesExplorer WatchKit App' do
+
+end
+

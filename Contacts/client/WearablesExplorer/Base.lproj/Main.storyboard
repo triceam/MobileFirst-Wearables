@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kJU-Ph-QbX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contacts-->
+        <scene sceneID="SJX-6U-eoe">
+            <objects>
+                <tableViewController title="Contacts" id="8AK-5M-GBB" customClass="ContactsTableViewController" customModule="WearablesExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SSO-KY-opB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="listCell" selectionStyle="default" indentationWidth="10" id="Kbd-Wm-9P3">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kbd-Wm-9P3" id="04k-5s-yiL">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8AK-5M-GBB" id="6Vh-7Q-oNz"/>
+                            <outlet property="delegate" destination="8AK-5M-GBB" id="h49-AG-z8Q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="4pw-UF-Ohq"/>
+                    <connections>
+                        <segue destination="qgz-ie-gIB" kind="show" identifier="showDetails" id="dpN-ZJ-gm9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7O-Ua-KBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="822"/>
+        </scene>
+        <!--User Details View Controller-->
+        <scene sceneID="hMc-Ji-jep">
+            <objects>
+                <viewController id="qgz-ie-gIB" customClass="UserDetailsViewController" customModule="WearablesExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CC7-fo-Byv"/>
+                        <viewControllerLayoutGuide type="bottom" id="set-Pg-Hkv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RdG-k8-AfV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="loading..." translatesAutoresizingMaskIntoConstraints="NO" id="9YW-em-49n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="set-Pg-Hkv" firstAttribute="top" secondItem="9YW-em-49n" secondAttribute="bottom" id="H09-9W-3qf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9YW-em-49n" secondAttribute="trailing" constant="-16" id="an2-RT-BJ9"/>
+                            <constraint firstItem="9YW-em-49n" firstAttribute="leading" secondItem="RdG-k8-AfV" secondAttribute="leadingMargin" constant="-16" id="hlI-Pu-Vxk"/>
+                            <constraint firstItem="9YW-em-49n" firstAttribute="top" secondItem="RdG-k8-AfV" secondAttribute="topMargin" id="io8-mc-E5K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="details" destination="9YW-em-49n" id="nLi-Ka-cZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zas-Ek-Xiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="822"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="Dmx-PC-jJT">
+            <objects>
+                <navigationController title="Contacts" id="kJU-Ph-QbX" customClass="ViewController" customModule="WearablesExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPg-Pu-MAH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8AK-5M-GBB" kind="relationship" relationship="rootViewController" id="WRQ-ys-WQd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tid-X0-BFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="822"/>
+        </scene>
+    </scenes>
+</document>

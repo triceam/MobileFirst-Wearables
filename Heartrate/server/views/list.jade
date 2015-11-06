@@ -1,0 +1,44 @@
+html
+  head
+    title HeartMonitor - powered by MobileFirst & Bluemix
+    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' rel='stylesheet')
+    link(href='/public/css/index.css' rel='stylesheet')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    script(src='/public/Chart.js')
+  body
+    div(class='well')
+        h1 HeartMonitor - powered by MobileFirst & Bluemix
+    div(class="container-fluid")
+        each val, index in results
+            div(class="col-md-12")
+                div(class="panel panel-default")
+                    div(class="panel-heading")
+                        h3= val.clientDate
+                    div(class="panel-body")
+                        canvas(class="chart" id='canvas' + val.sort)
+  script!= 'var results = ' + JSON.stringify(results) +';'
+  script!= 'var loadCalls = [];'
+  script!= 'function generateLabels(arr){ var result=[];for(var z=0;z<arr.length;z++){result.push("")} return result }'
+  script.
+    window.onload = function(){
+        for (var x=0; x<results.length; x++) {
+            var entry = results[x];
+            var lineChartData = {
+                labels : generateLabels(entry.transformedData),
+                datasets : [{
+                    label: "Heart Rate",
+                    fillColor : "rgba(151,187,205,0.1)",
+                    strokeColor : "rgba(151,187,205,1)",
+                    pointColor : "rgba(151,187,205,1)",
+                    pointStrokeColor : "#fff",
+                    pointHighlightFill : "#fff",
+                    pointHighlightStroke : "rgba(220,220,220,1)",
+                    data : entry.transformedData
+                }]  
+            } 
+            ctx = document.getElementById('canvas' + entry.sort).getContext("2d");
+            new Chart(ctx).Line(lineChartData, {
+                responsive: true
+            });
+        }  
+    }

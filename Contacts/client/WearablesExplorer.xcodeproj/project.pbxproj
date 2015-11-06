@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AC4159A4F88481B60CB693A /* libPods-WearablesExplorer WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE84E1EF3E01E9074175A5B /* libPods-WearablesExplorer WatchKit Extension.a */; };
+		5D146CA31BD8845C005C91E9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D146CA21BD8845C005C91E9 /* InterfaceController.swift */; };
+		5D146CA51BD8845C005C91E9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D146CA41BD8845C005C91E9 /* NotificationController.swift */; };
+		5D146CA71BD8845C005C91E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D146CA61BD8845C005C91E9 /* Images.xcassets */; };
+		5D146CAB1BD8845D005C91E9 /* WearablesExplorer WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 5D146CAA1BD8845D005C91E9 /* WearablesExplorer WatchKit App.app */; };
+		5D146CB31BD8845D005C91E9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D146CB11BD8845D005C91E9 /* Interface.storyboard */; };
+		5D146CB51BD8845D005C91E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D146CB41BD8845D005C91E9 /* Images.xcassets */; };
+		5D146CB81BD8845D005C91E9 /* WearablesExplorer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5D146C9D1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5D146CC11BD93141005C91E9 /* IMFLoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D146CC01BD93141005C91E9 /* IMFLoggerExtension.swift */; };
+		5D146CC31BD934BA005C91E9 /* BluemixConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D146CC21BD934BA005C91E9 /* BluemixConnector.swift */; };
+		5D146CC51BD936E8005C91E9 /* BluemixConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D146CC21BD934BA005C91E9 /* BluemixConnector.swift */; };
+		5D146CC71BD9373D005C91E9 /* libPods-WearablesExplorer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D146CC61BD9373D005C91E9 /* libPods-WearablesExplorer.a */; };
+		5D45FB3D1BEBE720006ED608 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45FB3C1BEBE720006ED608 /* DataManager.swift */; };
+		5D45FB3E1BEBE72A006ED608 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45FB3C1BEBE720006ED608 /* DataManager.swift */; };
+		5D5B9A001BDAB6670077DC18 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B99FF1BDAB6670077DC18 /* ContactsTableViewController.swift */; };
+		5D5B9A0A1BDAD08F0077DC18 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B9A091BDAD08F0077DC18 /* UserDetailsViewController.swift */; };
+		5D5B9A0C1BDE4F4C0077DC18 /* WatchTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B9A0B1BDE4F4C0077DC18 /* WatchTableRow.swift */; };
+		5D5B9A0E1BDE59120077DC18 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B9A0D1BDE59120077DC18 /* DetailsViewController.swift */; };
+		5D9AC74C1BD938DE00BD06DB /* IMFLoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D146CC01BD93141005C91E9 /* IMFLoggerExtension.swift */; };
+		5DDDE58B1BD8812C00DAAE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDE58A1BD8812C00DAAE12 /* AppDelegate.swift */; };
+		5DDDE58D1BD8812C00DAAE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDE58C1BD8812C00DAAE12 /* ViewController.swift */; };
+		5DDDE5901BD8812C00DAAE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDDE58E1BD8812C00DAAE12 /* Main.storyboard */; };
+		5DDDE5921BD8812C00DAAE12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDDE5911BD8812C00DAAE12 /* Images.xcassets */; };
+		5DDDE5951BD8812C00DAAE12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DDDE5931BD8812C00DAAE12 /* LaunchScreen.xib */; };
+		5DDDE5A11BD8812C00DAAE12 /* WearablesExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDE5A01BD8812C00DAAE12 /* WearablesExplorerTests.swift */; };
+		9CDB010027E6E0DC2FB987EA /* libPods-WearablesExplorer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE7B0838127353D5E8A7523 /* libPods-WearablesExplorer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D146CAC1BD8845D005C91E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DDDE57D1BD8812B00DAAE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D146CA91BD8845D005C91E9;
+			remoteInfo = "WearablesExplorer WatchKit App";
+		};
+		5D146CB61BD8845D005C91E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DDDE57D1BD8812B00DAAE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D146C9C1BD8845C005C91E9;
+			remoteInfo = "WearablesExplorer WatchKit Extension";
+		};
+		5DDDE59B1BD8812C00DAAE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DDDE57D1BD8812B00DAAE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DDDE5841BD8812B00DAAE12;
+			remoteInfo = WearablesExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D146CBF1BD8845D005C91E9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5D146CB81BD8845D005C91E9 /* WearablesExplorer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		103A3D490A9E16BE93E871E8 /* Pods-WearablesExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearablesExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WearablesExplorer/Pods-WearablesExplorer.release.xcconfig"; sourceTree = "<group>"; };
+		1C3BCFA9A1EA35534DF5E587 /* Pods-WearablesExplorer WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearablesExplorer WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WearablesExplorer WatchKit Extension/Pods-WearablesExplorer WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		24EC4DC94D04FF63FE53E0D7 /* Pods-WearablesExplorer WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearablesExplorer WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WearablesExplorer WatchKit Extension/Pods-WearablesExplorer WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		5D146C9D1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WearablesExplorer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D146CA01BD8845C005C91E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D146CA11BD8845C005C91E9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5D146CA21BD8845C005C91E9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5D146CA41BD8845C005C91E9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5D146CA61BD8845C005C91E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D146CAA1BD8845D005C91E9 /* WearablesExplorer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WearablesExplorer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D146CB01BD8845D005C91E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D146CB21BD8845D005C91E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5D146CB41BD8845D005C91E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D146CC01BD93141005C91E9 /* IMFLoggerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IMFLoggerExtension.swift; path = WearablesExplorer/IMFLoggerExtension.swift; sourceTree = "<group>"; };
+		5D146CC21BD934BA005C91E9 /* BluemixConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluemixConnector.swift; path = WearablesExplorer/BluemixConnector.swift; sourceTree = "<group>"; };
+		5D146CC61BD9373D005C91E9 /* libPods-WearablesExplorer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WearablesExplorer.a"; path = "Pods/../build/Debug-iphoneos/libPods-WearablesExplorer.a"; sourceTree = "<group>"; };
+		5D45FB3C1BEBE720006ED608 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = WearablesExplorer/DataManager.swift; sourceTree = "<group>"; };
+		5D5B99FF1BDAB6670077DC18 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		5D5B9A071BDACFB10077DC18 /* WearablesExplorer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WearablesExplorer.entitlements; sourceTree = "<group>"; };
+		5D5B9A081BDACFF40077DC18 /* WearablesExplorer WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WearablesExplorer WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		5D5B9A091BDAD08F0077DC18 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		5D5B9A0B1BDE4F4C0077DC18 /* WatchTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchTableRow.swift; sourceTree = "<group>"; };
+		5D5B9A0D1BDE59120077DC18 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5DDDE5851BD8812B00DAAE12 /* WearablesExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WearablesExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDDE5891BD8812C00DAAE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DDDE58A1BD8812C00DAAE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DDDE58C1BD8812C00DAAE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DDDE58F1BD8812C00DAAE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DDDE5911BD8812C00DAAE12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DDDE5941BD8812C00DAAE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5DDDE59A1BD8812C00DAAE12 /* WearablesExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WearablesExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDDE59F1BD8812C00DAAE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DDDE5A01BD8812C00DAAE12 /* WearablesExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearablesExplorerTests.swift; sourceTree = "<group>"; };
+		63F35A55F42A22EDD45CB37F /* Pods-WearablesExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearablesExplorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WearablesExplorer/Pods-WearablesExplorer.debug.xcconfig"; sourceTree = "<group>"; };
+		6AE7B0838127353D5E8A7523 /* libPods-WearablesExplorer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WearablesExplorer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE84E1EF3E01E9074175A5B /* libPods-WearablesExplorer WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WearablesExplorer WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D146C9A1BD8845C005C91E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D146CC71BD9373D005C91E9 /* libPods-WearablesExplorer.a in Frameworks */,
+				1AC4159A4F88481B60CB693A /* libPods-WearablesExplorer WatchKit Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDE5821BD8812B00DAAE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDB010027E6E0DC2FB987EA /* libPods-WearablesExplorer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDE5971BD8812C00DAAE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D146C9E1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B9A081BDACFF40077DC18 /* WearablesExplorer WatchKit Extension.entitlements */,
+				5D146CA21BD8845C005C91E9 /* InterfaceController.swift */,
+				5D146CA41BD8845C005C91E9 /* NotificationController.swift */,
+				5D146CA61BD8845C005C91E9 /* Images.xcassets */,
+				5D146C9F1BD8845C005C91E9 /* Supporting Files */,
+				5D5B9A0B1BDE4F4C0077DC18 /* WatchTableRow.swift */,
+				5D5B9A0D1BDE59120077DC18 /* DetailsViewController.swift */,
+			);
+			path = "WearablesExplorer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5D146C9F1BD8845C005C91E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D146CA01BD8845C005C91E9 /* Info.plist */,
+				5D146CA11BD8845C005C91E9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D146CAE1BD8845D005C91E9 /* WearablesExplorer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5D146CB11BD8845D005C91E9 /* Interface.storyboard */,
+				5D146CB41BD8845D005C91E9 /* Images.xcassets */,
+				5D146CAF1BD8845D005C91E9 /* Supporting Files */,
+			);
+			path = "WearablesExplorer WatchKit App";
+			sourceTree = "<group>";
+		};
+		5D146CAF1BD8845D005C91E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D146CB01BD8845D005C91E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D9AC74D1BD938E500BD06DB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5D45FB3C1BEBE720006ED608 /* DataManager.swift */,
+				5D146CC01BD93141005C91E9 /* IMFLoggerExtension.swift */,
+				5D146CC21BD934BA005C91E9 /* BluemixConnector.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		5DDDE57C1BD8812B00DAAE12 = {
+			isa = PBXGroup;
+			children = (
+				5D9AC74D1BD938E500BD06DB /* Shared */,
+				5DDDE5871BD8812B00DAAE12 /* WearablesExplorer */,
+				5DDDE59D1BD8812C00DAAE12 /* WearablesExplorerTests */,
+				5D146C9E1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension */,
+				5D146CAE1BD8845D005C91E9 /* WearablesExplorer WatchKit App */,
+				5DDDE5861BD8812B00DAAE12 /* Products */,
+				AB029A7612062EB1485613BA /* Pods */,
+				7565CB3CF0D2A52EC5F9ABDD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DDDE5861BD8812B00DAAE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DDDE5851BD8812B00DAAE12 /* WearablesExplorer.app */,
+				5DDDE59A1BD8812C00DAAE12 /* WearablesExplorerTests.xctest */,
+				5D146C9D1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension.appex */,
+				5D146CAA1BD8845D005C91E9 /* WearablesExplorer WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DDDE5871BD8812B00DAAE12 /* WearablesExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B9A071BDACFB10077DC18 /* WearablesExplorer.entitlements */,
+				5DDDE58A1BD8812C00DAAE12 /* AppDelegate.swift */,
+				5DDDE58C1BD8812C00DAAE12 /* ViewController.swift */,
+				5DDDE58E1BD8812C00DAAE12 /* Main.storyboard */,
+				5DDDE5911BD8812C00DAAE12 /* Images.xcassets */,
+				5DDDE5931BD8812C00DAAE12 /* LaunchScreen.xib */,
+				5DDDE5881BD8812B00DAAE12 /* Supporting Files */,
+				5D5B99FF1BDAB6670077DC18 /* ContactsTableViewController.swift */,
+				5D5B9A091BDAD08F0077DC18 /* UserDetailsViewController.swift */,
+			);
+			path = WearablesExplorer;
+			sourceTree = "<group>";
+		};
+		5DDDE5881BD8812B00DAAE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DDDE5891BD8812C00DAAE12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DDDE59D1BD8812C00DAAE12 /* WearablesExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DDDE5A01BD8812C00DAAE12 /* WearablesExplorerTests.swift */,
+				5DDDE59E1BD8812C00DAAE12 /* Supporting Files */,
+			);
+			path = WearablesExplorerTests;
+			sourceTree = "<group>";
+		};
+		5DDDE59E1BD8812C00DAAE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DDDE59F1BD8812C00DAAE12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7565CB3CF0D2A52EC5F9ABDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D146CC61BD9373D005C91E9 /* libPods-WearablesExplorer.a */,
+				6AE7B0838127353D5E8A7523 /* libPods-WearablesExplorer.a */,
+				ECE84E1EF3E01E9074175A5B /* libPods-WearablesExplorer WatchKit Extension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB029A7612062EB1485613BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63F35A55F42A22EDD45CB37F /* Pods-WearablesExplorer.debug.xcconfig */,
+				103A3D490A9E16BE93E871E8 /* Pods-WearablesExplorer.release.xcconfig */,
+				24EC4DC94D04FF63FE53E0D7 /* Pods-WearablesExplorer WatchKit Extension.debug.xcconfig */,
+				1C3BCFA9A1EA35534DF5E587 /* Pods-WearablesExplorer WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D146C9C1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D146CBC1BD8845D005C91E9 /* Build configuration list for PBXNativeTarget "WearablesExplorer WatchKit Extension" */;
+			buildPhases = (
+				CE15132062DAD1C9087187DC /* Check Pods Manifest.lock */,
+				5D146C991BD8845C005C91E9 /* Sources */,
+				5D146C9A1BD8845C005C91E9 /* Frameworks */,
+				5D146C9B1BD8845C005C91E9 /* Resources */,
+				6A0B292C341E5193F212CA52 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D146CAD1BD8845D005C91E9 /* PBXTargetDependency */,
+			);
+			name = "WearablesExplorer WatchKit Extension";
+			productName = "WearablesExplorer WatchKit Extension";
+			productReference = 5D146C9D1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		5D146CA91BD8845D005C91E9 /* WearablesExplorer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D146CB91BD8845D005C91E9 /* Build configuration list for PBXNativeTarget "WearablesExplorer WatchKit App" */;
+			buildPhases = (
+				5D146CA81BD8845D005C91E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WearablesExplorer WatchKit App";
+			productName = "WearablesExplorer WatchKit App";
+			productReference = 5D146CAA1BD8845D005C91E9 /* WearablesExplorer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		5DDDE5841BD8812B00DAAE12 /* WearablesExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DDDE5A41BD8812C00DAAE12 /* Build configuration list for PBXNativeTarget "WearablesExplorer" */;
+			buildPhases = (
+				B18281DF9693A07C697EB606 /* Check Pods Manifest.lock */,
+				5DDDE5811BD8812B00DAAE12 /* Sources */,
+				5DDDE5821BD8812B00DAAE12 /* Frameworks */,
+				5DDDE5831BD8812B00DAAE12 /* Resources */,
+				5D146CBF1BD8845D005C91E9 /* Embed App Extensions */,
+				63165CF8F2FE72E4C23004EC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D146CB71BD8845D005C91E9 /* PBXTargetDependency */,
+			);
+			name = WearablesExplorer;
+			productName = WearablesExplorer;
+			productReference = 5DDDE5851BD8812B00DAAE12 /* WearablesExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DDDE5991BD8812C00DAAE12 /* WearablesExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DDDE5A71BD8812C00DAAE12 /* Build configuration list for PBXNativeTarget "WearablesExplorerTests" */;
+			buildPhases = (
+				5DDDE5961BD8812C00DAAE12 /* Sources */,
+				5DDDE5971BD8812C00DAAE12 /* Frameworks */,
+				5DDDE5981BD8812C00DAAE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DDDE59C1BD8812C00DAAE12 /* PBXTargetDependency */,
+			);
+			name = WearablesExplorerTests;
+			productName = WearablesExplorerTests;
+			productReference = 5DDDE59A1BD8812C00DAAE12 /* WearablesExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DDDE57D1BD8812B00DAAE12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Andrew Trice";
+				TargetAttributes = {
+					5D146C9C1BD8845C005C91E9 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = D67FV253XK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5D146CA91BD8845D005C91E9 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = D67FV253XK;
+					};
+					5DDDE5841BD8812B00DAAE12 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = D67FV253XK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5DDDE5991BD8812C00DAAE12 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 5DDDE5841BD8812B00DAAE12;
+					};
+				};
+			};
+			buildConfigurationList = 5DDDE5801BD8812B00DAAE12 /* Build configuration list for PBXProject "WearablesExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DDDE57C1BD8812B00DAAE12;
+			productRefGroup = 5DDDE5861BD8812B00DAAE12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DDDE5841BD8812B00DAAE12 /* WearablesExplorer */,
+				5DDDE5991BD8812C00DAAE12 /* WearablesExplorerTests */,
+				5D146C9C1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension */,
+				5D146CA91BD8845D005C91E9 /* WearablesExplorer WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D146C9B1BD8845C005C91E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D146CAB1BD8845D005C91E9 /* WearablesExplorer WatchKit App.app in Resources */,
+				5D146CA71BD8845C005C91E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D146CA81BD8845D005C91E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D146CB31BD8845D005C91E9 /* Interface.storyboard in Resources */,
+				5D146CB51BD8845D005C91E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDE5831BD8812B00DAAE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDDE5901BD8812C00DAAE12 /* Main.storyboard in Resources */,
+				5DDDE5951BD8812C00DAAE12 /* LaunchScreen.xib in Resources */,
+				5DDDE5921BD8812C00DAAE12 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDE5981BD8812C00DAAE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63165CF8F2FE72E4C23004EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WearablesExplorer/Pods-WearablesExplorer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A0B292C341E5193F212CA52 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WearablesExplorer WatchKit Extension/Pods-WearablesExplorer WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B18281DF9693A07C697EB606 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE15132062DAD1C9087187DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D146C991BD8845C005C91E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9AC74C1BD938DE00BD06DB /* IMFLoggerExtension.swift in Sources */,
+				5D5B9A0C1BDE4F4C0077DC18 /* WatchTableRow.swift in Sources */,
+				5D146CA51BD8845C005C91E9 /* NotificationController.swift in Sources */,
+				5D45FB3E1BEBE72A006ED608 /* DataManager.swift in Sources */,
+				5D5B9A0E1BDE59120077DC18 /* DetailsViewController.swift in Sources */,
+				5D146CC51BD936E8005C91E9 /* BluemixConnector.swift in Sources */,
+				5D146CA31BD8845C005C91E9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDE5811BD8812B00DAAE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDDE58D1BD8812C00DAAE12 /* ViewController.swift in Sources */,
+				5DDDE58B1BD8812C00DAAE12 /* AppDelegate.swift in Sources */,
+				5D5B9A001BDAB6670077DC18 /* ContactsTableViewController.swift in Sources */,
+				5D45FB3D1BEBE720006ED608 /* DataManager.swift in Sources */,
+				5D5B9A0A1BDAD08F0077DC18 /* UserDetailsViewController.swift in Sources */,
+				5D146CC31BD934BA005C91E9 /* BluemixConnector.swift in Sources */,
+				5D146CC11BD93141005C91E9 /* IMFLoggerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDE5961BD8812C00DAAE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDDE5A11BD8812C00DAAE12 /* WearablesExplorerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D146CAD1BD8845D005C91E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D146CA91BD8845D005C91E9 /* WearablesExplorer WatchKit App */;
+			targetProxy = 5D146CAC1BD8845D005C91E9 /* PBXContainerItemProxy */;
+		};
+		5D146CB71BD8845D005C91E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D146C9C1BD8845C005C91E9 /* WearablesExplorer WatchKit Extension */;
+			targetProxy = 5D146CB61BD8845D005C91E9 /* PBXContainerItemProxy */;
+		};
+		5DDDE59C1BD8812C00DAAE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DDDE5841BD8812B00DAAE12 /* WearablesExplorer */;
+			targetProxy = 5DDDE59B1BD8812C00DAAE12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D146CB11BD8845D005C91E9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D146CB21BD8845D005C91E9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		5DDDE58E1BD8812C00DAAE12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDDE58F1BD8812C00DAAE12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DDDE5931BD8812C00DAAE12 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDDE5941BD8812C00DAAE12 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D146CBA1BD8845D005C91E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = WearablesExplorer_WatchKit_Extension;
+				INFOPLIST_FILE = "WearablesExplorer WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		5D146CBB1BD8845D005C91E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = WearablesExplorer_WatchKit_Extension;
+				INFOPLIST_FILE = "WearablesExplorer WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		5D146CBD1BD8845D005C91E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EC4DC94D04FF63FE53E0D7 /* Pods-WearablesExplorer WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WearablesExplorer WatchKit Extension/WearablesExplorer WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WearablesExplorer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5D146CBE1BD8845D005C91E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3BCFA9A1EA35534DF5E587 /* Pods-WearablesExplorer WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WearablesExplorer WatchKit Extension/WearablesExplorer WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "WearablesExplorer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5DDDE5A21BD8812C00DAAE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DDDE5A31BD8812C00DAAE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DDDE5A51BD8812C00DAAE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F35A55F42A22EDD45CB37F /* Pods-WearablesExplorer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WearablesExplorer/WearablesExplorer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WearablesExplorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		5DDDE5A61BD8812C00DAAE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103A3D490A9E16BE93E871E8 /* Pods-WearablesExplorer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WearablesExplorer/WearablesExplorer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WearablesExplorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		5DDDE5A81BD8812C00DAAE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WearablesExplorerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WearablesExplorer.app/WearablesExplorer";
+			};
+			name = Debug;
+		};
+		5DDDE5A91BD8812C00DAAE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WearablesExplorerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WearablesExplorer.app/WearablesExplorer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D146CB91BD8845D005C91E9 /* Build configuration list for PBXNativeTarget "WearablesExplorer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D146CBA1BD8845D005C91E9 /* Debug */,
+				5D146CBB1BD8845D005C91E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D146CBC1BD8845D005C91E9 /* Build configuration list for PBXNativeTarget "WearablesExplorer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D146CBD1BD8845D005C91E9 /* Debug */,
+				5D146CBE1BD8845D005C91E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDDE5801BD8812B00DAAE12 /* Build configuration list for PBXProject "WearablesExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDDE5A21BD8812C00DAAE12 /* Debug */,
+				5DDDE5A31BD8812C00DAAE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDDE5A41BD8812C00DAAE12 /* Build configuration list for PBXNativeTarget "WearablesExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDDE5A51BD8812C00DAAE12 /* Debug */,
+				5DDDE5A61BD8812C00DAAE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDDE5A71BD8812C00DAAE12 /* Build configuration list for PBXNativeTarget "WearablesExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDDE5A81BD8812C00DAAE12 /* Debug */,
+				5DDDE5A91BD8812C00DAAE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DDDE57D1BD8812B00DAAE12 /* Project object */;
+}

@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'Bluemix-MicrosoftBand' do
+pod 'IMFCore'
+pod 'IMFURLProtocol'
+pod 'IMFPush'
+pod 'IMFData'
+pod 'IMFFacebookAuthentication'
+end
+
+target 'Bluemix-MicrosoftBandTests' do
+
+end
+
