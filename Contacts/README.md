@@ -27,7 +27,7 @@ An ultra-simplistic contact list application that demonstrates MobileFirst on Bl
 4. Clone the app to your local environment from your terminal using the following command
 
   ```
-  git clone https://github.com/triceam/MobileFirst-WatchKit/tree/master/Contacts.git
+  git clone https://github.com/triceam/MobileFirst-Wearables/tree/master/Contacts.git
   ```
 
 5. Open the file server/Contacts-Database/server/datasources.json and configure your credentials for IBM Cloudant.

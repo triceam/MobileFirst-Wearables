@@ -34,7 +34,7 @@ The app has been configured to use [Bluemix Mobile Client Access](ama_url) for o
 4. Clone the app to your local environment from your terminal using the following command
 
   ```
-  git clone https://github.com/triceam/MobileFirst-WatchKit/tree/master/Heartrate.git
+  git clone https://github.com/triceam/MobileFirst-Wearables/tree/master/Heartrate.git
   ```
 
 5. Back in the command line termianl, cd into this newly created directory, then go into the /server directory.
