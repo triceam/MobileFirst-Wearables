@@ -1,7 +1,7 @@
 #Heartrate
-The **Heartrate** app is a modified version of the [Microsoft Band SDK](band_sdk) Heartrate sample application.   This app will measure the user's heart rate from the Microsoft Band perhiperal/wearabe device for a duration of 45 seconds.  
+The **Heartrate** app is a modified version of the [Microsoft Band SDK][band_sdk] Heartrate sample application.   This app will measure the user's heart rate from the Microsoft Band perhiperal/wearabe device for a duration of 45 seconds.  
 
-The app has been configured to use [Bluemix Mobile Client Access](ama_url) for operational analytics and user authentication using [Facebook](facebook_auth) as the identity provider, and it uses the [Cloudant Sync](cloudant_sync) SDK for an offline-first architecture.  In this case, the data is first saved on the local device using [Cloudant Sync](cloudant_sync) and data is automatically saved  up on the [IBM Cloudant](cloudant) cloud database whenver a network connection is present.
+The app has been configured to use [Bluemix Mobile Client Access][ama_url] for operational analytics and user authentication using [Facebook][facebook_auth] as the identity provider, and it uses the [Cloudant Sync][cloudant_sync] SDK for an offline-first architecture.  In this case, the data is first saved on the local device using [Cloudant Sync][cloudant_sync] and data is automatically saved  up on the [IBM Cloudant][cloudant] cloud database whenver a network connection is present.
 
 ![Microsft Band on wrist with iPhone in Background](./github_content/heartrate.jpg)
  
@@ -72,7 +72,7 @@ The native iOS application requires **Xcode 6.4** running on a Mac to compile an
 
 4. This will create an Xcode Workspace file.  Open the **Bluemix-MicrosoftBand.xcworkspace** file in Xcode.
  
-5. Configure Facebook as the identity provider.  This configuration requires settings both on the Mobile Client Access service and in the native code project (inside the "client" directory for this project).   In the local project, be sure to follow the instructions for both sections: [configuring the Facebook SDK](facebook_sdk_config) and [Configuring Faebook Authentication](facebook_auth). Be sure to make the appropriate changes inside of Info.plist.
+5. Configure Facebook as the identity provider.  This configuration requires settings both on the Mobile Client Access service and in the native code project (inside the "client" directory for this project).   In the local project, be sure to follow the instructions for both sections: [configuring the Facebook SDK][facebook_sdk_config] and [Configuring Faebook Authentication][facebook_auth]. Be sure to make the appropriate changes inside of Info.plist.
 
 6. Open the "**AppDelegate.m**" file.  Update the connection to Bluemix on line 35 to include your app's route and GUID.   
 

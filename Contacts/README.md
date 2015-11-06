@@ -1,5 +1,5 @@
 #Contacts
-An ultra-simplistic contact list application that demonstrates MobileFirst on Bluemix integration, with shared client-side code between an iPhone and Apple Watch project.  Ths sample also demonstrates consumption of data on IBM Cloudant through an API on Node.js created using the [LoopBack](http://loopback.io) framework for Node.js   
+An ultra-simplistic contact list application that demonstrates MobileFirst on Bluemix integration, with shared client-side code between an iPhone and Apple Watch project.  Ths sample also demonstrates consumption of data on IBM Cloudant through an API on Node.js created using the [LoopBack][http://loopback.io] framework for Node.js   
 
 ![Contacts App on Apple Watch](./github_content/contacts-watch.jpg)
 
